@@ -67,7 +67,7 @@
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  color: #209cee;
+  color: #0A578A;
 }
 
 .is-shady {
@@ -175,4 +175,130 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+a {
+  color: #1B4FA1;
+}
+
+.input:focus,
+.button:focus,
+.select select:focus,
+.textarea:focus,
+.checkbox input:focus,
+.radio input:focus,
+a:focus,
+[tabindex]:focus {
+  box-shadow: none;
+  outline: 2px solid #ff9323;
+}
+
+.button.is-info {
+  background-color: #0A578A;
+}
+
+.hero.is-info {
+  background-color: #0A578A;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a,
+.hero.is-info .tabs.is-boxed li.is-active a:hover,
+.hero.is-info .tabs.is-toggle li.is-active a,
+.hero.is-info .tabs.is-toggle li.is-active a:hover {
+  color: #0A578A;
+}
+
+.tag:not(body).is-danger {
+  background-color: #B80025;
+}
+
+.tag:not(body).is-primary {
+  background-color: #006152;
+}
+
+.tag:not(body).is-success {
+  background-color: #11642E;
+}
+
+.has-text-grey-light {
+  color: #595959 !important;
+}
+
+.has-background-grey-light {
+  background-color: #E8E8E8 !important;
+}
+
+.help.is-success {
+  color: #0F612C;
+}
+
+.input.is-success, .textarea.is-success {
+  border-color: #0F612C;
+}
+
+.help.is-danger {
+  color: #B80025;
+}
+
+.input.is-danger, .textarea.is-danger {
+  border-color: #B80025;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.skip-link-header {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.skip-links {
+  top: 25px;
+  padding: 10px;
+}
+
+.skip-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.skip-link-header.active,
+.skip-link-header.active + .skip-links {
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: #fff;
+}
+
+.icon-external {
+  position: relative;
+  top: -4px;
+  left: 2px;
+  width: 10px;
+}
+
+.breadcrumbs {
+  padding: 10px;
+}
+
+.breadcrumbs-list {
+  display: flex;
+}
+
+.breadcrumbs-separator {
+  padding: 0 5px;
+}
+
+.breadcrumbs-link {
+  color: #0A578A;
+}
+
+.breadcrumbs-link:hover {
+  text-decoration: underline;
 }
