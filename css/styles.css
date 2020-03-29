@@ -302,3 +302,7 @@ a:focus,
 .breadcrumbs-link:hover {
   text-decoration: underline;
 }
+
+.is-pulled-right {
+  margin-left: 5px;
+}
