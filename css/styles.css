@@ -181,8 +181,14 @@ a {
   color: #1B4FA1;
 }
 
+a:not(.button):not(.tab) {
+  text-decoration: underline;
+}
+
 .input:focus,
 .button:focus,
+.modal-close:focus,
+.modal:focus,
 .select select:focus,
 .textarea:focus,
 .checkbox input:focus,
