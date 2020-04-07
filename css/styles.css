@@ -181,7 +181,7 @@ a {
   color: #1B4FA1;
 }
 
-a:not(.button):not(.tab) {
+a:not(.button):not(.tab):not(.navbar-subitem) {
   text-decoration: underline;
 }
 
@@ -311,4 +311,60 @@ a:focus,
 
 .is-pulled-right {
   margin-left: 5px;
+}
+
+.navbar-item .navbar-link:not(.is-arrowless).active {
+  background-color: #fff;
+  border-color: #fff;
+  color: #0a0a0a;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  right: 1em;
+  border-color: #fff;
+}
+
+.navbar-link:not(.is-arrowless):hover::after,
+.navbar-link:not(.is-arrowless).active::after {
+  border-color: #000;
+}
+
+.button.is-white.is-outlined:focus:not(:hover):not(.active) {
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+}
+
+.navbar-submenu {
+  display: none;
+  position: absolute;
+  top: 56px;
+  padding: 5px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.navbar-link.active + .navbar-submenu {
+  display: block;
+}
+
+.navbar-subitem {
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.navbar-subitem:hover,
+.navbar-subitem:focus {
+  color: #fff;
+  background-color: #222;
+}
+
+.navbar-submenu-separator {
+  height: 1px;
+  margin: 5px 0;
+  background-color: #ccc;
 }
