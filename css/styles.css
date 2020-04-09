@@ -181,8 +181,14 @@ a {
   color: #1B4FA1;
 }
 
+a:not(.button):not(.tab) {
+  text-decoration: underline;
+}
+
 .input:focus,
 .button:focus,
+.modal-close:focus,
+.modal:focus,
 .select select:focus,
 .textarea:focus,
 .checkbox input:focus,
@@ -301,4 +307,8 @@ a:focus,
 
 .breadcrumbs-link:hover {
   text-decoration: underline;
+}
+
+.is-pulled-right {
+  margin-left: 5px;
 }
