@@ -1,9 +1,4 @@
 (function modalBoxModule() {
-  var KEY_TAB = 9;
-  var KEY_ENTER = 13;
-  var KEY_ESCAPE = 27;
-  var KEY_SPACE = 32;
-
   var SELECTOR_MODAL_OPEN = '.modal-button';
   var SELECTOR_BUTTON = 'button'
   var SELECTOR_MODAL = '.modal';

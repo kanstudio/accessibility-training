@@ -42,7 +42,12 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end" role="menubar">
               <span class="navbar-item" role="presentation">
-                <a class="button is-white is-outlined" href="#" aria-label="Home will open in this tab" role="menuitem">
+                <a class="button is-white is-outlined navbar-link is-arrowless"
+                  href="#"
+                  aria-label="Home"
+                  role="menuitem"
+                  tabindex="0"
+                >
                   <span class="icon">
                     <span class="fa fa-home" aria-hidden="true"></span>
                   </span>
@@ -50,15 +55,45 @@
                 </a>
               </span>
               <span class="navbar-item" role="presentation">
-                <a class="button is-white is-outlined" href="#" aria-label="Examples will open in this tab" role="menuitem" aria-haspopup="true">
+                <a class="button is-white is-outlined navbar-link"
+                  href="#"
+                  aria-label="Examples"
+                  role="menuitem"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  tabindex="-1"
+                >
                   <span class="icon">
                     <span class="fab fa-superpowers" aria-hidden="true"></span>
                   </span>
                   <span>Examples</span>
                 </a>
+                <ul role="menu" class="navbar-submenu">
+                  <li role="none">
+                    <a class="navbar-subitem" role="menuitem" tabindex="-1" href="#" aria-label="Administration">Administration</a>
+                  </li>
+                  <li role="none">
+                    <a class="navbar-subitem" role="menuitem" tabindex="-1" href="#" aria-label="Team Settings">Team Settings</a>
+                  </li>
+                  <li role="none">
+                    <a class="navbar-subitem" role="menuitem" tabindex="-1" href="#" aria-label="Manage Your Team">Manage Your Team</a>
+                  </li>
+                  <li role="none">
+                    <a class="navbar-subitem" role="menuitem" tabindex="-1" href="#" aria-label="Invitations">Invitations</a>
+                  </li>
+                  <li role="separator" class="navbar-submenu-separator"></li>
+                  <li role="none">
+                    <a class="navbar-subitem" role="menuitem" tabindex="-1" href="#" aria-label="Authentication">Authentication</a>
+                  </li>
+                </ul>
               </span>
               <span class="navbar-item" role="presentation">
-                <a class="button is-white is-outlined" href="#" aria-label="Documentation will open in this tab" role="menuitem">
+                <a class="button is-white is-outlined navbar-link is-arrowless"
+                  href="#"
+                  aria-label="Documentation"
+                  role="menuitem"
+                  tabindex="-1"
+                >
                   <span class="icon">
                     <span class="fa fa-book" aria-hidden="true"></span>
                   </span>
@@ -66,7 +101,12 @@
                 </a>
               </span>
               <span class="navbar-item" role="presentation">
-                <a class="button is-white is-outlined" href="#" aria-label="View Source will open in a new tab" role="menuitem">
+                <a class="button is-white is-outlined navbar-link is-arrowless"
+                  href="#"
+                  aria-label="View Source"
+                  role="menuitem"
+                  tabindex="-1"
+                >
                   <span class="icon">
                     <span class="fab fa-github" aria-hidden="true"></span>
                   </span>
@@ -287,21 +327,21 @@
       </div>
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
-      <ul role="tablist" aria-activedescendant="topic-1">
+      <ul role="tablist" aria-labelledby="topics-header">
         <li data-target="pane-1" aria-owns="pane-1" id="topic-1" class="is-active" role="presentation">
-          <a tabindex="0" role="tab" class="tab">
+          <a tabindex="0" role="tab" class="tab" aria-selected="true" aria-controls="pane-1">
             <span class="icon is-small"><span class="fa fa-image" aria-hidden="true"></span></span>
             <span>Pictures</span>
           </a>
         </li>
         <li data-target="pane-3" aria-owns="pane-3" id="topic-3" role="presentation">
-          <a tabindex="0" role="tab" class="tab">
+          <a tabindex="-1" role="tab" class="tab" aria-selected="false" aria-controls="pane-3">
             <span class="icon is-small"><span class="fab fa-superpowers" aria-hidden="true"></span></span>
             <span>Team</span>
           </a>
         </li>
         <li data-target="pane-4" aria-owns="pane-4" id="topic-4" role="presentation">
-          <a tabindex="0" role="tab" class="tab">
+          <a tabindex="-1" role="tab" class="tab" aria-selected="false" aria-controls="pane-4">
             <span class="icon is-small"><span class="fa fa-film" aria-hidden="true"></span></span>
             <span>Video</span>
           </a>
@@ -1082,7 +1122,11 @@
     <button class="modal-close is-large" aria-label="Close"></button>
   </div>
 
+  <script defer src="js/keyboard-constants.js"></script>
+  <script defer src="js/skip-link-menu.js"></script>
   <script defer src="js/modal-box.js"></script>
+  <script defer src="js/tabs-switcher.js"></script>
+  <script defer src="js/menu-bar.js"></script>
   <script defer src="js/custom.js"></script>
 </body>
 </html>
